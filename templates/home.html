@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/styles">-->
+    </head>
+    <body>
+        <header>
+        <div class="container">
+            <div id="brandname">
+                Machine Learning App with Flask            
+            </div>
+            <h2>Air Quality Index prediction</h2>
+            </div>
+        </header> 
+        
+        <div class="ml-container">
+            <form action="{{ url_for('predict)}}" meathod="POST">
+            <p>Click on predict</p>
+                <!--<imput type="text" name="comment"/>-->
+                
+                <br/>
+                
+                <input type="submit" class="btn-info" value="predict">
+            </form>
+        </div>
+        <h3> Made by: Devansh Sharma</h3>
+    </body>
+</html>
